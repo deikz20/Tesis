@@ -1,4 +1,62 @@
-h1{
-background-color: aquamarine;
-color: aliceblue;
+/*
+colores
+#120907 negro
+#232842 oscuro violeta
+#606292 semioscuro violeta
+#a9a4eb claro violeta
+#a9a4eb claro blanco
+
+*/
+body{
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                         'lateral contenido'
+                         'lateral contenido'
+                         'footer footer'
+                         ;
+}
+#cabecera1{
+    grid-area: cabecera;
+    background-color:#1C1E2A;
+    height: 85px;
+}
+#cabecera1 h1.titulo{
+    color:#F2F2EA;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 35%;
+}
+#blateral{
+    height: 500px;
+    width: 300px;
+    background-color:#232842 ;
+    grid-area: lateral;
+}
+#blateral nav a{
+    font-size: 20px;
+    color:#F2F2EA;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+#blateral nav a:hover{
+    color:#F2F2EA;
+    background-color:#1C1E2A;
+    border-left: 4px solid #c7c7c7;
+    
+}
+#cont{
+    height: 500px;
+    grid-area: contenido;
+    background-color:#F2F2EA;
+}
+#cont img{
+    float: right;
+    height: 500px;
+    width: 1200px;
+}
+#foot{
+    height: 60px;
+    background-color:#1C1E2A;
+    grid-area: footer;
 }
